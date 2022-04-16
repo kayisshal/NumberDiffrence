@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ja"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CalcNUmberDifference.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">NumberDifference</a> &gt; <a href="index.source.html" class="el_package">program.NumberDifference</a> &gt; <span class="el_source">CalcNUmberDifference.java</span></div><h1>CalcNUmberDifference.java</h1><pre class="source lang-java linenums">package program.NumberDifference;
+
+import java.util.ArrayList;
+
+<span class="fc" id="L5">public class CalcNUmberDifference {</span>
+
+	// fungsi mengembalikan nilai selisih antara nilai terbesar dan terkecil
+	public int numberDiffirenceProcess(ArrayList&lt;Integer&gt; deretBil) {
+<span class="fc" id="L9">		int difference = 0;</span>
+		int min;
+		int max;
+		int idxDeretBil;
+		
+<span class="fc" id="L14">		min = deretBil.get(0);</span>
+<span class="fc" id="L15">		max = deretBil.get(0);</span>
+
+<span class="fc bfc" id="L17" title="All 2 branches covered.">		for (idxDeretBil = 1; idxDeretBil &lt; deretBil.size(); idxDeretBil++) { </span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">			if (deretBil.get(idxDeretBil) &lt; min)</span>
+<span class="fc" id="L19">				min = deretBil.get(idxDeretBil);</span>
+<span class="fc bfc" id="L20" title="All 2 branches covered.">			if (deretBil.get(idxDeretBil) &gt; max)</span>
+<span class="fc" id="L21">				max = deretBil.get(idxDeretBil);</span>
+		}
+		
+<span class="fc" id="L24">		difference = max - min;</span>
+		
+<span class="fc" id="L26">		return difference;</span>
+	}
+	
+	// fungsi mengembalikan jenis grup berdasarkan nilai selisih nilai terbesar dan terkecil
+	// kelompok “Small Difference” untuk selisih berada di antara 1-10 
+	// kelompok “Medium Difference” untuk selisih berada di antara 11-50
+	// kelompok “Large Difference” untuk selisih berada di antara &gt; 50
+	// kelompok “There’s no difference” untuk selisih 0 atau tidak memiliki selisih, yaitu nilai terkecil = terbesar
+	public String groupingDifference(int diff) {
+		String message;
+		int group;
+		
+<span class="fc" id="L38">		message = &quot;Difference : &quot; + diff; </span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">		if(diff&gt;50) {</span>
+<span class="fc" id="L40">			group = 3;</span>
+<span class="pc bpc" id="L41" title="1 of 4 branches missed.">		}else if(diff&gt;=11 &amp;&amp; diff&lt;=50) { </span>
+<span class="fc" id="L42">			group = 2;</span>
+<span class="pc bpc" id="L43" title="1 of 4 branches missed.">		}else if(diff&gt;=1 &amp;&amp; diff&lt;=10){ </span>
+<span class="fc" id="L44">			group = 1;</span>
+		}else {
+<span class="fc" id="L46">			group = 0;</span>
+		}
+		
+<span class="fc bfc" id="L49" title="All 2 branches covered.">		if(group&gt;0){</span>
+<span class="fc" id="L50">			message = message + &quot;\nGroup &quot; + group + &quot;, &quot;;</span>
+		}else{
+<span class="fc" id="L52">			message = message + &quot;\nNon Group &quot;;</span>
+		}
+		
+<span class="fc bfc" id="L55" title="All 4 branches covered.">		switch(group) {</span>
+<span class="fc" id="L56">			case 1: message = message + &quot;Small Difference&quot;; break; </span>
+<span class="fc" id="L57">			case 2: message = message + &quot;Medium Difference&quot;; break;</span>
+<span class="fc" id="L58">			case 3: message = message + &quot;Large Differece&quot;; break;</span>
+<span class="fc" id="L59">			default: message = message + &quot;There's no difference&quot;; break;</span>
+		}
+		
+<span class="fc" id="L62">		return message;</span>
+	}
+	
+	// function validasi nilai N sesuai dengan range valid, yaitu N berada pada range 1-10
+	// mengembalikan true, jika nilai N sesuai dengan range
+	// // sebaliknya mengembalikan false
+	public boolean validateRangeInputMaxDeret(int nBil) {
+<span class="fc" id="L69">		boolean valid = false;</span>
+<span class="pc bpc" id="L70" title="1 of 4 branches missed.">		if(nBil&gt;=1 &amp;&amp; nBil&lt;=10) { </span>
+<span class="fc" id="L71">			valid =  true;</span>
+		}
+<span class="fc" id="L73">		return valid;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="20" failures="0" name="program.NumberDifference.NumberDifferenceTest" time="0.022" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.13+10-LTS-370"/>
+    <property name="sun.boot.library.path" value="D:\PROGRAM\java\jdk\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\POLBAN JTK\D4 3B semester 6\4. Pengujian Perangkat Lunak\Pertemuan ke- (11)\NumberDifference"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="JP"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\POLBAN JTK\D4 3B semester 6\4. Pengujian Perangkat Lunak\Pertemuan ke- (11)\NumberDifference"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.13+10-LTS-370"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\fachr\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\PROGRAM\apache-maven-3.8.5\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="MS932"/>
+    <property name="java.library.path" value="D:\PROGRAM\java\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;D:\POLBAN JTK\D4 3B semester 6\5. Pemrograman Perangkat Lunak Berorientasi Objek\PROGRAM\Workstation\bin\;D:\PROGRAM\java\jdk\bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-17\bin;D:\PROGRAM\xampp\src\vcredist\php;C:\Program Files\nodejs\;D:\PROGRAM\putty\;D:\POLBAN JTK\D4 3B semester 6\5. Pemrograman Perangkat Lunak Berorientasi Objek\Pertemuan ke- (2)\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\ProgramData\chocolatey\bin;D:\PROGRAM\mingw\bin;D:\PROGRAM\Anaconda-Distribution;D:\PROGRAM\Anaconda-Distribution\Library\bin;D:\PROGRAM\Anaconda-Distribution\Scripts;D:\PROGRAM\apache-maven-3.8.5\bin;D:\POLBAN JTK\D4 3B semester 6\4. Pengujian Perangkat Lunak\REFERENSI\sonar-scanner-4.2.0.1873-windows\bin;C:\Users\fachr\scoop\shims;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\fachr\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\fachr\AppData\Local\Programs\Python\Python39\;C:\Users\fachr\AppData\Local\Microsoft\WindowsApps;C:\Users\fachr\AppData\Local\Programs\Microsoft VS Code\bin;D:\PROGRAM\firefoxdriver;D:\PROGRAM\phantomjs\bin;C:\Users\fachr\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\Java\jre1.8.0_301\bin;D:\PROGRAM\xampp\src\vcredist\php;C:\Users\fachr\AppData\Roaming\npm;D:\POLBAN JTK\D4 3B semester 6\5. Pemrograman Perangkat Lunak Berorientasi Objek\Pertemuan ke- (1);D:\POLBAN JTK\D4 3B semester 6\5. Pemrograman Perangkat Lunak Berorientasi Objek\Pertemuan ke- (3)\microstack\Multipass\bin;C:\Windows\System32;;."/>
+    <property name="maven.conf" value="D:\PROGRAM\apache-maven-3.8.5/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\PROGRAM\apache-maven-3.8.5\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\fachr"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="MS932"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="fachr"/>
+    <property name="java.class.path" value="D:\PROGRAM\apache-maven-3.8.5\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.home" value="D:\PROGRAM\java\jdk"/>
+    <property name="user.language" value="ja"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.13"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="ms932"/>
+    <property name="maven.home" value="D:\PROGRAM\apache-maven-3.8.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.stdout.encoding" value="ms932"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testScreenHeader" time="0.007"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testRun" time="0"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testOtuputKelompok_1BatasAtas" time="0"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testScreenLabelInputNBilangan" time="0.001"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testOtuputKelompok_3BatasBawah" time="0"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testScreenLabelInputDeret" time="0.001"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testOtuputKelompok_3" time="0"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testScreenInputNumberListValue" time="0.007"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testInputNBilDalamRange_01" time="0.001"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testOtuputKelompok_2BatasBawah" time="0"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testOtuputKelompok_0" time="0"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testOtuputKelompok_1BatasBawah" time="0"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testOtuputKelompok_2BatasAtas" time="0"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testOtuputDari2InputTidakImbang1" time="0.002"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testOtuputKelompok_2" time="0"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testScreenInputNumberSingleValue" time="0.002"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testOtuputKelompok_1" time="0"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testOtuputDari2InputTidakImbang2" time="0.001"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testInputNBilLuarRange_01" time="0"/>
+  <testcase classname="program.NumberDifference.NumberDifferenceTest" name="testOtuputDari2InputSama" time="0"/>
+</testsuite>

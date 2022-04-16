@@ -1,0 +1,6 @@
+projectKey=NumberDifference
+serverUrl=http://localhost:9000
+serverVersion=8.1.0.31237
+dashboardUrl=http://localhost:9000/dashboard?id=NumberDifference
+ceTaskId=AYAzyfefS7YOcH0TBEaQ
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYAzyfefS7YOcH0TBEaQ
